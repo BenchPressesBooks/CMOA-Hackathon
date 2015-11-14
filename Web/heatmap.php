@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+include("connect.php");
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,16 +23,34 @@ var map, pointarray, heatmap;
  
 // a shortened version of the data for Google's taxi example
 var taxiData = [
-  new google.maps.LatLng(37.782551, -122.445368)
-  // ...
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(37.782551, -122.445368),
+  new google.maps.LatLng(12.000000, -2.00000000)
 ];
  
  
 function initialize() {
   // the map's options
   var mapOptions = {
-    zoom: 13,
-    center: new google.maps.LatLng(37.774546, -122.433523),
+    zoom: 2,
+    center: new google.maps.LatLng(0,0),
     mapTypeId: google.maps.MapTypeId.SATELLITE
   };
  
@@ -38,7 +62,7 @@ function initialize() {
   // what data for the heatmap and how to display it
   heatmap = new google.maps.visualization.HeatmapLayer({
     data: pointArray,
-    radius: 50
+    radius: 25
   });
  
   // placing the heatmap on the map
