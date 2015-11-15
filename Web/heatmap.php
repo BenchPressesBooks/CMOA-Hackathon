@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 include("connect.php");
 ?>
 
@@ -23,26 +22,8 @@ var map, pointarray, heatmap;
  
 // a shortened version of the data for Google's taxi example
 var taxiData = [
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(37.782551, -122.445368),
-  new google.maps.LatLng(12.000000, -2.00000000)
+  new google.maps.LatLng(-77.849459, 166.667795),
+//Coordinates here
 ];
  
  
