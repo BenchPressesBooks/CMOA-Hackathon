@@ -1,0 +1,133 @@
+PUT cmoa
+{
+   "mappings": {
+      "work": {
+         "properties": {
+            "accession_number": {
+               "type": "string",
+               "index": "not_analyzed"
+            },
+            "classification": {
+               "type": "string",
+               "index": "not_analyzed"
+            },
+            "creation_date": {
+               "type": "string",
+               "index": "not_analyzed"
+            },
+            "creation_date_earliest": {
+               "type": "date",
+               "format": "strict_date_optional_time||epoch_millis"
+            },
+            "creation_date_latest": {
+               "type": "date",
+               "format": "strict_date_optional_time||epoch_millis"
+            },
+            "creator": {
+               "type": "nested",
+               "include_in_parent": true,
+               "properties": {
+                  "artist_id": {
+                     "type": "string",
+                     "index": "not_analyzed"
+                  },
+                  "birth_date": {
+                     "type": "date",
+                     "format": "strict_date_optional_time||epoch_millis"
+                  },
+                  "birth_place": {
+                     "type": "string",
+                     "index": "not_analyzed"
+                  },
+                  "cited_name": {
+                     "type": "string",
+                     "index": "not_analyzed"
+                  },
+                  "death_date": {
+                     "type": "date",
+                     "format": "strict_date_optional_time||epoch_millis"
+                  },
+                  "death_place": {
+                     "type": "string",
+                     "index": "not_analyzed"
+                  },
+                  "full_name": {
+                     "type": "string",
+                     "index": "not_analyzed"
+                  },
+                  "nationality": {
+                     "type": "string",
+                     "index": "not_analyzed"
+                  },
+                  "party_type": {
+                     "type": "string",
+                     "index": "not_analyzed"
+                  },
+                  "role": {
+                     "type": "string",
+                     "index": "not_analyzed"
+                  }
+               }
+            },
+            "credit_line": {
+               "type": "string",
+               "index": "not_analyzed"
+            },
+            "date_acquired": {
+               "type": "date",
+               "format": "strict_date_optional_time||epoch_millis"
+            },
+            "department": {
+               "type": "string",
+               "index": "not_analyzed"
+            },
+            "id": {
+               "type": "string",
+               "index": "not_analyzed"
+            },
+            "images": {
+               "type": "nested",
+               "include_in_parent": true,
+               "properties": {
+                  "image_url": {
+                     "type": "string",
+                     "index": "not_analyzed"
+                  }
+               }
+            },
+            "item_depth": {
+               "type": "double"
+            },
+            "item_diameter": {
+               "type": "double"
+            },
+            "item_height": {
+               "type": "double"
+            },
+            "item_width": {
+               "type": "double"
+            },
+            "medium": {
+               "type": "string",
+               "index": "not_analyzed"
+            },
+            "physical_location": {
+               "type": "string",
+               "index": "not_analyzed"
+            },
+            "provenance_text": {
+               "type": "string",
+               "index": "not_analyzed"
+            },
+            "title": {
+               "type": "string",
+               "index": "not_analyzed"
+            },
+            "web_url": {
+               "type": "string",
+               "index": "not_analyzed"
+            }
+         }
+      }
+   }
+}
