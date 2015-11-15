@@ -1,15 +1,12 @@
-DROP TABLE nationalities;
+﻿DROP TABLE IF EXISTS nationalities;
 CREATE TABLE IF NOT EXISTS nationalities(
    Nationality VARCHAR(29) NOT NULL PRIMARY KEY
   ,Country     VARCHAR(14)
 );
-INSERT INTO nationalities(Nationality,Country) VALUES ('Swiss','Switzerland');
-INSERT INTO nationalities(Nationality,Country) VALUES ('Vietnamese','Vietnam');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Achaemenid','Iraq');
 INSERT INTO nationalities(Nationality,Country) VALUES ('African','Africa');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Albanian','Albania');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Algerian','Algeria');
-INSERT INTO nationalities(Nationality,Country) VALUES ('American','United States');
 INSERT INTO nationalities(Nationality,Country) VALUES ('American','United States');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Ancient Roman','Italian');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Argentine','Argentina');
@@ -57,7 +54,6 @@ INSERT INTO nationalities(Nationality,Country) VALUES ('Filipino','Phillippines'
 INSERT INTO nationalities(Nationality,Country) VALUES ('Finnish','Finland');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Flemish','Dutch');
 INSERT INTO nationalities(Nationality,Country) VALUES ('French','France');
-INSERT INTO nationalities(Nationality,Country) VALUES ('French','France');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Georgian','Georgia');
 INSERT INTO nationalities(Nationality,Country) VALUES ('German','Germany');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Greco-Bactrian','Afghanistan');
@@ -98,7 +94,6 @@ INSERT INTO nationalities(Nationality,Country) VALUES ('New Zealander','New Zeal
 INSERT INTO nationalities(Nationality,Country) VALUES ('Nigerian','Nigeria');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Northern European','Europe');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Norwegian','Norway');
-INSERT INTO nationalities(Nationality,Country) VALUES (NULL,NULL);
 INSERT INTO nationalities(Nationality,Country) VALUES ('Pakistani','Pakistan');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Panamanian','Panama');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Pende','Congo');
@@ -137,5 +132,6 @@ INSERT INTO nationalities(Nationality,Country) VALUES ('undetermined',NULL);
 INSERT INTO nationalities(Nationality,Country) VALUES ('Uruguayan','Uruguay');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Venetian','Italy');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Venezuelan','Venezuela');
+INSERT INTO nationalities(Nationality,Country) VALUES ('Vietnamese','Vietnam');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Yoruba','Nigeria');
 INSERT INTO nationalities(Nationality,Country) VALUES ('Yugoslavian','Yugoslavia');
