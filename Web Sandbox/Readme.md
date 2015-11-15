@@ -1,0 +1,1 @@
+This data is not a dpart of the Elasticsearch / Kibana data evaluation system. This is a sandbox that will enable lookup of geographic data that is not possible with the given OOTB data set.
